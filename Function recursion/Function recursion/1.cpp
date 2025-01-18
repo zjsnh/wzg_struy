@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+//递归 = 递推 + 回归
+//递归的两个必要条件：
+//1.存在限制条件 2.不断接近限制条件
+
+//按顺序打印整型数字的每一位
 void print(int n)
 {
 	if (n > 9)
@@ -16,3 +21,26 @@ int main()
 	print(num);//print把num的每一位打印出来
 	return 0;
 }
+
+
+//编写函数。不允许创建临时变量，求字符串长度
+size_t my_strlen(char* str)
+{
+	size_t count = 0;
+	while (*str != '\0')
+	{
+		count++;
+		str++;
+	}
+	return count;
+}
+
+int main()
+{
+	char arr[] = "abc";
+	size_t len = my_strlen(arr);//传递的是数组首元素的地址
+	printf("%zd\n", len);
+	return 0;
+}
+
+//递归做法：
