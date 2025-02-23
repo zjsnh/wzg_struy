@@ -1,0 +1,5 @@
+﻿  test.cpp
+D:\Github\wzg_struy\struct\struct\test.cpp(103,13): error C2440: “初始化”: 无法从“int”转换为“char []”
+      D:\Github\wzg_struy\struct\struct\test.cpp(103,13):
+      没有转换为数组类型，但有转换为数组的引用或指针
+  
