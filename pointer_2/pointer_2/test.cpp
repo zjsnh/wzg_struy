@@ -219,10 +219,6 @@ int Add(int x, int y)
 	return x + y;
 }
 
-int main()
-{
-	printf("%p\n", Add);
-	printf("%p\n", &Add);
 
 	int(*pf1)(int, int) = Add;
 	int(*pf2)(int, int) = &Add;//º¯ÊıÖ¸Õë
