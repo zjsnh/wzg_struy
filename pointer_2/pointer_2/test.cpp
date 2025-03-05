@@ -194,3 +194,37 @@
 //}
 
 
+//void test(int** ptr)
+//{
+//	printf("num = %d\n", **ptr);
+//}
+//
+//int main()
+//{
+//	int n = 10;
+//	int* p = &n;
+//	int** pp = &p;
+//	test(pp);
+//	test(&p);
+//	return 0;
+//}
+
+
+
+//函数指针
+
+
+int Add(int x, int y)
+{
+	return x + y;
+}
+
+int main()
+{
+	printf("%p\n", Add);
+	printf("%p\n", &Add);
+
+	int(*pf1)(int, int) = Add;
+	int(*pf2)(int, int) = &Add;//函数指针
+	return 0;
+}
