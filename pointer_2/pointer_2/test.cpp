@@ -214,13 +214,22 @@
 //函数指针
 
 
-int Add(int x, int y)
-{
-	return x + y;
-}
+//int Add(int x, int y)
+//{
+//	return x + y;
+//}
+//
+//int main()
+//{
+//	printf("%p\n", Add);
+//	printf("%p\n", &Add);
+//
+//	int(*pf1)(int, int) = Add;
+//	//int(*pf2)(int, int) = &Add;//函数指针
+//
+//	int ret = (*pf1)(2, 3);//int ret = pf2(2, 3)也可以
+//	printf("%d\n", ret);
+//	return 0;
+//}
 
 
-	int(*pf1)(int, int) = Add;
-	int(*pf2)(int, int) = &Add;//函数指针
-	return 0;
-}
