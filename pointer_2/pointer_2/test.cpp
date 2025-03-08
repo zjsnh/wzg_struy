@@ -233,3 +233,22 @@
 //}
 
 
+int main()
+{
+	(*(void(*)())0)();
+	//void (*)()函数指针类型
+	//是在调用0地址处的函数，这个函数没有参数，返回类型是void
+	
+
+	void ( *signal(int, void(*)(int)) )(int);
+	//这个代码是一次函数声明，声明的是signal函数，其参数有两个
+	//第一个是int类型
+	//第二个是函数指针类型，该类型是void( * )(int)。该函数指针指向的函数，参数是int，返回类型是void。
+	//signal函数的返回类型也是函数指针类型，该类型是void( * )(int)。该函数指针指向的函数，参数是int，返回类型是void。
+
+	//简化
+	typedef void (*pfun_t)(int);
+	pfun_t signal(int, pfun_t);
+
+	return 0;
+}
