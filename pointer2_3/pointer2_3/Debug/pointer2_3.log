@@ -1,0 +1,5 @@
+﻿  test.cpp
+D:\Github\wzg_struy\pointer2_3\pointer2_3\test.cpp(67,16): warning C4018: “<”: 有符号/无符号不匹配
+D:\Github\wzg_struy\pointer2_3\pointer2_3\test.cpp(80,15): warning C4018: “<”: 有符号/无符号不匹配
+D:\Github\wzg_struy\pointer2_3\pointer2_3\test.cpp(83,16): warning C4018: “<”: 有符号/无符号不匹配
+  pointer2_3.vcxproj -> D:\Github\wzg_struy\pointer2_3\Debug\pointer2_3.exe
