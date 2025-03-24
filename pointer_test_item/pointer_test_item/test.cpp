@@ -74,25 +74,50 @@
 //}
 
 
+//int main()
+//{
+//	const char* p = "abcdef";
+//
+//	//printf("%d\n", sizeof(p));//4/8
+//	//printf("%d\n", sizeof(p + 1));//4/8
+//	//printf("%d\n", sizeof(*p));//1 (char*)
+//	//printf("%d\n", sizeof(p[0]));//1 p[0]==*(p+0)==*p
+//	//printf("%d\n", sizeof(&p));//4/8 &p是地址
+//	//printf("%d\n", sizeof(&p + 1));//4/8
+//	//printf("%d\n", sizeof(&p[0] + 1));//4/8 p+1
+//
+//	printf("%d\n", strlen(p));//6
+//	printf("%d\n", strlen(p + 1));//5
+//	//printf("%d\n", strlen(*p));//err
+//	//printf("%d\n", strlen(p[0]));
+//	//printf("%d\n", strlen(&p));//随机值
+//	//printf("%d\n", strlen(&p + 1));
+//	printf("%d\n", strlen(&p[0] + 1));//5
+//
+//	return 0;
+//}
+
+
 int main()
 {
-	const char* p = "abcdef";
+	//二维数组
+	int a[3][4] = { 0 };
 
-	//printf("%d\n", sizeof(p));//4/8
-	//printf("%d\n", sizeof(p + 1));//4/8
-	//printf("%d\n", sizeof(*p));//1 (char*)
-	//printf("%d\n", sizeof(p[0]));//1 p[0]==*(p+0)==*p
-	//printf("%d\n", sizeof(&p));//4/8 &p是地址
-	//printf("%d\n", sizeof(&p + 1));//4/8
-	//printf("%d\n", sizeof(&p[0] + 1));//4/8 p+1
-
-	printf("%d\n", strlen(p));//6
-	printf("%d\n", strlen(p + 1));//5
-	//printf("%d\n", strlen(*p));//err
-	//printf("%d\n", strlen(p[0]));
-	//printf("%d\n", strlen(&p));//随机值
-	//printf("%d\n", strlen(&p + 1));
-	printf("%d\n", strlen(&p[0] + 1));//5
+	printf("%zd\n", sizeof(a));//3*4*4=48
+	printf("%zd\n", sizeof(a[0][0]));//4
+	printf("%zd\n", sizeof(a[0]));//4*4=16
+	printf("%zd\n", sizeof(a[0] + 1));//4/8 a[0]并非单独放在sizeof内，也没有&，所以a[0]表示数组第一行第一个元素的地址 a[0]==&a[0][0]
+	//a[0]+1==&a[0][1]
+	printf("%zd\n", sizeof(*(a[0] + 1)));//4 a[0]+1是第一行第二个元素的地址，解引用后就表示该元素
+	printf("%zd\n", sizeof(a + 1));//4/8 a作为二维数组数组名，并没有单独放在sizeof内，也没有&，a就是数组首元素的地址，也就是第一行的地址
+	//a+1就是第二行的地址，a是数组指针，类型是 int(*) [4]
+	printf("%zd\n", sizeof(*(a + 1)));//16 一行数组的大小，算的是第二行的大小
+	printf("%zd\n", sizeof(&a[0] + 1));//4/8
+	//a[0]是第一行的数组名，&a[0]取出的是数组的地址，是第一行这个一维数组的地址，类型是int(*)[4]，&a[0]+1是第二行的地址
+	printf("%zd\n", sizeof(*(&a[0] + 1)));//16 访问的是第二行，计算的就是第二行的大小
+	printf("%zd\n", sizeof(*a));//16 a表示数组首元素的地址，也就是第一行的地址
+	//*a==*(a+0)==a[0]
+	printf("%zd\n", sizeof(a[3]));//16 第四行的地址，但是不会越界 a[3]==arr[0]
 
 	return 0;
 }
