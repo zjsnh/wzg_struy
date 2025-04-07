@@ -1,5 +1,8 @@
 #pragma once
+
 #include <stdio.h>
+#include <assert.h>
+#include <string.h>
 
 #define NAME_MAX 20
 #define SEX_MAX 5
@@ -24,3 +27,7 @@ typedef struct Contact
 	int sz;//通讯录人数
 }Contact;
 
+
+void InitContact(Contact* pc);
+void AddContact(Contact* pc);
+void ShowContact(Contact* pc);

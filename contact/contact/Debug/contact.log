@@ -1,2 +1,4 @@
-﻿  test.c
-  contact.vcxproj -> D:\Github\wzg_struy\contact\Debug\contact.exe
+﻿  contact.c
+  test.c
+D:\Github\wzg_struy\contact\contact\contact.c(49,39): error C2059: 语法错误:“)”
+  正在生成代码...

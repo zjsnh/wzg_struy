@@ -26,6 +26,9 @@ int main()
 {
 	int input = 0;
 
+	Contact con;
+	//此时通讯录中的data和sz都是随机值，应该初始化通讯录
+	InitContact(&con);
 
 	do
 	{
@@ -35,6 +38,7 @@ int main()
 		switch (input)
 		{
 		case ADD:
+			AddContact(&con);
 			break;
 		case DEL:
 			break;
@@ -43,6 +47,7 @@ int main()
 		case MODIFY:
 			break;
 		case SHOW:
+			ShowContact(&con);
 			break;
 		case SORT:
 			break;
