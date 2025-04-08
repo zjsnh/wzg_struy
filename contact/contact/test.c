@@ -4,6 +4,7 @@
 
 void menu()
 {
+	printf("\n");
 	printf("******************************\n");
 	printf("**** 1.add          2.del ****\n");
 	printf("**** 3.search    4.modify ****\n");
@@ -41,6 +42,7 @@ int main()
 			AddContact(&con);
 			break;
 		case DEL:
+			DelContact(&con);
 			break;
 		case SEARCH:
 			break;

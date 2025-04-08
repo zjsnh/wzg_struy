@@ -30,4 +30,5 @@ typedef struct Contact
 
 void InitContact(Contact* pc);
 void AddContact(Contact* pc);
-void ShowContact(Contact* pc);
+void ShowContact(const Contact* pc);
+void DelContact(Contact* pc);
