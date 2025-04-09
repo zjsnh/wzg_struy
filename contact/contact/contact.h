@@ -32,3 +32,5 @@ void InitContact(Contact* pc);
 void AddContact(Contact* pc);
 void ShowContact(const Contact* pc);
 void DelContact(Contact* pc);
+void SearchContact(Contact* pc);
+void ModifyContact(Contact* pc);

@@ -52,7 +52,7 @@ void ShowContact(const Contact* pc)
 }
 
 
-int FindByName(Contact* pc, char name[])
+static int FindByName(Contact* pc, char name[])
 {
 	assert(pc);
 	int i = 0;
@@ -89,4 +89,51 @@ void DelContact(Contact* pc)
 	{
 		pc->data[i] = pc->data[i + 1];
 	}
+	pc->sz--;
+	printf("删除成功\n");
+}
+
+
+void SearchContact(Contact* pc)
+{
+	char name[MAX];
+	assert(pc);
+	printf("请输入要查找人的姓名：");
+	scanf("%s", name);
+	int ret = FindByName(pc, name);
+	if (ret == -1)
+	{
+		printf("要查找的人不存在\n");
+		return;
+	}
+	printf("\n");
+	printf("%-10s%-5s%-5s%-12s%-30s\n", "名字", "年龄", "性别", "电话", "住址");
+	printf("%-10s%-5d%-5s%-12s%-30s\n",
+	pc->data[ret].name, pc->data[ret].age, pc->data[ret].sex, pc->data[ret].tele, pc->data[ret].addr);
+}
+
+
+void ModifyContact(Contact* pc)
+{
+	char name[MAX];
+	assert(pc);
+	printf("请输入要修改人的姓名：");
+	scanf("%s", name);
+	int ret = FindByName(pc, name);
+	if (ret == -1)
+	{
+		printf("要修改的人不存在\n");
+		return;
+	}
+	printf("请输入姓名：");
+	scanf("%s", pc->data[ret].name);
+	printf("请输入年龄：");
+	scanf("%d", &(pc->data[ret].age));
+	printf("请输入性别：");
+	scanf("%s", pc->data[ret].sex);
+	printf("请输入电话：");
+	scanf("%s", pc->data[ret].tele);
+	printf("请输入地址：");
+	scanf("%s", pc->data[ret].addr);
+	printf("修改成功\n");
 }
