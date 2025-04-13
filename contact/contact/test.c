@@ -56,6 +56,7 @@ int main()
 		case SORT:
 			break;
 		case EXIT:
+			DestroyContact(&con);
 			printf("�˳�ͨѶ¼\n");
 			break;
 		default:
