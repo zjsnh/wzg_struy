@@ -11,18 +11,56 @@
 //}
 
 //动态通讯录版本
+//void InitContact(Contact* pc)
+//{
+//	assert(pc);
+//	pc->sz = 0;
+//	pc->capaticy = default_sz;
+//    pc->data = calloc(pc->capaticy, sizeof(PeoInfo));
+//	if (pc->data == NULL)
+//	{
+//		perror("InitContact->calloc");
+//		return;
+//	}
+//}
+
+
+
+void LoadContact(Contact* pc)
+{
+	FILE* pf = fopen("contact.txt", "rb");
+	if (pf == NULL)
+	{
+		perror(LoadContact);
+		return;
+	}
+	//读文件
+	PeoInfo tmp = { 0 };
+	while (fread(&tmp, sizeof(PeoInfo), 1, pf))
+	{
+		CheckCapacity(pc);
+		pc->data[pc->sz] = tmp;
+		pc->sz++;
+	}
+
+	fclose(pf);
+	pf = NULL;
+}
+
+//文件版本初始化通讯录
 void InitContact(Contact* pc)
 {
 	assert(pc);
 	pc->sz = 0;
 	pc->capaticy = default_sz;
-    pc->data = calloc(pc->capaticy, sizeof(PeoInfo));
+	pc->data = calloc(pc->capaticy, sizeof(PeoInfo));
 	if (pc->data == NULL)
 	{
 		perror("InitContact->calloc");
 		return;
 	}
 }
+
 
 void DestroyContact(Contact* pc)
 {
@@ -198,4 +236,45 @@ void ModifyContact(Contact* pc)
 	printf("请输入地址：");
 	scanf("%s", pc->data[ret].addr);
 	printf("修改成功\n");
+}
+
+
+void SaveContact(Contact* pc)
+{
+	FILE* pf = fopen("contact.txt", "w");
+	if (pf == NULL)
+	{
+		perror("SaveContact");
+		return;
+	}
+	
+	int i = 0;
+	for (i = 0;i < pc->sz;i++)
+	{
+		//fwrite(&(pc->data[i]), sizeof(PeoInfo), 1, pf);
+		fwrite(pc->data + i, sizeof(PeoInfo), 1, pf);
+	}
+
+	fclose(pf);
+	pf = NULL;
+}
+
+
+void CheckCapacity(Contact* pc)
+{
+	if (pc->sz == pc->capaticy)
+	{
+		PeoInfo* ptr = (PeoInfo*)realloc(pc->data, (pc->capaticy + 2) * sizeof(PeoInfo));
+		if (ptr != NULL)
+		{
+			pc->data = ptr;
+			pc->capaticy += 2;
+			printf("增容成功\n");
+		}
+		else
+		{
+			perror("AddContact->realloc");
+			return;
+		}
+	}
 }

@@ -51,11 +51,13 @@ int main()
 			ModifyContact(&con);
 			break;
 		case SHOW:
+			LoadContact(&con);
 			ShowContact(&con);
 			break;
 		case SORT:
 			break;
 		case EXIT:
+			SaveContact(&con);
 			DestroyContact(&con);
 			printf("�˳�ͨѶ¼\n");
 			break;

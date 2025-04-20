@@ -47,3 +47,6 @@ void DelContact(Contact* pc);
 void SearchContact(Contact* pc);
 void ModifyContact(Contact* pc);
 void DestroyContact(Contact* pc);
+void SaveContact(Contact* pc);
+void LoadContact(Contact* pc);
+void CheckCapacity(Contact* pc);
