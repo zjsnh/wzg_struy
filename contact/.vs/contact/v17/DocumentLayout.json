@@ -50,8 +50,7 @@
               "RelativeToolTip": "contact\\contact.h",
               "ViewState": "AgIAACQAAAAAAAAAAAAAADMAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-05T12:18:09.473Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-05T12:18:09.473Z"
             },
             {
               "$type": "Document",
@@ -63,8 +62,7 @@
               "RelativeToolTip": "contact\\contact.c",
               "ViewState": "AgIAABUAAAAAAAAAAAAAABwAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-04-05T12:17:52.049Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-05T12:17:52.049Z"
             },
             {
               "$type": "Document",
@@ -74,7 +72,7 @@
               "RelativeDocumentMoniker": "contact\\test.c",
               "ToolTip": "D:\\Github\\wzg_struy\\contact\\contact\\test.c",
               "RelativeToolTip": "contact\\test.c",
-              "ViewState": "AgIAABgAAAAAAAAAAAAmwBQAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAABQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-04-05T12:17:32.89Z",
               "EditorCaption": ""
