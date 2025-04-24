@@ -1,0 +1,5 @@
+﻿  SqList.c
+  test.c
+D:\Github\wzg_struy\SqList\SqList\SqList.c(80,5): warning C4098: “print”:“void”函数返回值
+  正在生成代码...
+  SqList.vcxproj -> D:\Github\wzg_struy\SqList\Debug\SqList.exe
