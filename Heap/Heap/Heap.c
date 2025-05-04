@@ -69,3 +69,66 @@ void HeapPush(Hp* php, HpDataType x)
 	AdjustUp(php->a, php->size - 1);
 }
 
+void AdjustDown(HpDataType* a, int size, int parent)
+{
+	int child = parent * 2 + 1;
+
+	//假设左孩子小，如果假设错了，更新
+	while(child < size)
+	{
+		if (child + 1 < size && a[child + 1] < a[child])
+		{
+			++child;
+		}
+		if (a[child] < a[parent])
+		{
+			Swap(&a[child], &a[parent]);
+			parent = child;
+			child = parent * 2 + 1;
+		}
+		else
+		{
+			break;
+		}
+	}
+}
+
+void HeapPop(Hp* php)
+{
+	assert(php);
+	assert(php->size > 0);
+
+	Swap(&php->a[0], &php->a[php->size - 1]);
+	php->size--;
+
+	AdjustDown(php->a, php->size, 0);
+}
+
+HpDataType HeapTop(Hp* php)
+{
+	assert(php);
+	assert(php->size > 0);
+	return php->a[0];
+}
+
+size_t HeapSize(Hp* php)
+{
+	assert(php);
+	return php->size;
+}
+
+bool HeapEmpty(Hp* php)
+{
+	assert(php);
+	return php->size == 0;
+}
+
+void HeapSort(int* a, int n)
+{
+	int i = 0;
+	//建堆
+	for (i = 0;i < n;i++)
+	{
+		AdjustUp(a, i);
+	}
+}

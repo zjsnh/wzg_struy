@@ -1,2 +1,5 @@
-﻿  Test.c
-  Heap.vcxproj -> D:\Github\wzg_struy\Heap\Debug\Heap.exe
+﻿  Heap.c
+  Test.c
+D:\Github\wzg_struy\Heap\Heap\Heap.c(74,21): error C2143: 语法错误: 缺少“;”(在“常数”的前面)
+D:\Github\wzg_struy\Heap\Heap\Heap.c(75,1): error C2143: 语法错误: 缺少“;”(在“}”的前面)
+  正在生成代码...
