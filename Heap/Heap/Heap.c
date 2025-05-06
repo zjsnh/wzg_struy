@@ -123,12 +123,47 @@ bool HeapEmpty(Hp* php)
 	return php->size == 0;
 }
 
-void HeapSort(int* a, int n)
+void HeapSortUp(int* a, int n) //升序
 {
 	int i = 0;
-	//建堆
-	for (i = 0;i < n;i++)
+	//建大堆
+	//O(N*logN)
+	/*for (i = 0;i < n;i++)
 	{
 		AdjustUp(a, i);
+	}*/
+
+	//O(N)
+	for (i = (n - 2) / 2;i >= 0;--i)
+	{
+		AdjustDown(a, n, i);
 	}
+
+	int end = n - 1;
+	while (end > 0)
+	{
+		Swap(&a[0], &a[end]);
+		AdjustDown(a, end, 0);
+		--end;
+	}
+}
+
+void CreateDate() //造数据
+{
+	int n = 10000000;
+	srand(time(0));
+	const char* file = "data.txt";
+	FILE* fin = fopen(file, "w");
+	if (fin == NULL)
+	{
+		perror("fopen error");
+		return;
+	}
+
+	for (int i = 0; i < n; ++i)
+	{
+		int x = (rand() + i) % 10000000;
+		fprintf(fin, "%d\n", x);
+	}
+	fclose(fin);
 }
