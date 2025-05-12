@@ -3,6 +3,9 @@
   "WorkspaceRootPath": "D:\\Github\\wzg_struy\\C\u002B\u002B Beginner Level\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F4E1BC61-E851-4312-AB25-ACF857581AE6}|C\u002B\u002B Beginner Level\\C\u002B\u002B Beginner Level.vcxproj|C:\\PROGRAM FILES\\MICROSOFT VISUAL STUDIO\\2022\\COMMUNITY\\VC\\TOOLS\\MSVC\\14.42.34433\\INCLUDE\\IOSTREAM||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F4E1BC61-E851-4312-AB25-ACF857581AE6}|C\u002B\u002B Beginner Level\\C\u002B\u002B Beginner Level.vcxproj|D:\\Github\\wzg_struy\\C\u002B\u002B Beginner Level\\C\u002B\u002B Beginner Level\\test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F4E1BC61-E851-4312-AB25-ACF857581AE6}|C\u002B\u002B Beginner Level\\C\u002B\u002B Beginner Level.vcxproj|solutionrelative:C\u002B\u002B Beginner Level\\test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -35,12 +38,23 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "iostream",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\include\\iostream",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\include\\iostream",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-09T06:49:25.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "test.cpp",
               "DocumentMoniker": "D:\\Github\\wzg_struy\\C\u002B\u002B Beginner Level\\C\u002B\u002B Beginner Level\\test.cpp",
               "RelativeDocumentMoniker": "C\u002B\u002B Beginner Level\\test.cpp",
-              "ToolTip": "D:\\Github\\wzg_struy\\C\u002B\u002B Beginner Level\\C\u002B\u002B Beginner Level\\test.cpp*",
-              "RelativeToolTip": "C\u002B\u002B Beginner Level\\test.cpp*",
-              "ViewState": "AgIAADYAAAAAAAAAAAAcwEMAAAAKAAAAAAAAAA==",
+              "ToolTip": "D:\\Github\\wzg_struy\\C\u002B\u002B Beginner Level\\C\u002B\u002B Beginner Level\\test.cpp",
+              "RelativeToolTip": "C\u002B\u002B Beginner Level\\test.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-09T06:31:10.489Z",
               "EditorCaption": ""
