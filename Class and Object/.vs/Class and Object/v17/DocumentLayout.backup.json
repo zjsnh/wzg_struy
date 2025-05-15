@@ -1,0 +1,100 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Github\\wzg_struy\\Class and Object\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2F139874-BA2C-441B-AF1F-750D6339D874}|Class and Object\\Class and Object.vcxproj|D:\\Github\\wzg_struy\\Class and Object\\Class and Object\\test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2F139874-BA2C-441B-AF1F-750D6339D874}|Class and Object\\Class and Object.vcxproj|solutionrelative:Class and Object\\test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F139874-BA2C-441B-AF1F-750D6339D874}|Class and Object\\Class and Object.vcxproj|D:\\Github\\wzg_struy\\Class and Object\\Class and Object\\stack.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2F139874-BA2C-441B-AF1F-750D6339D874}|Class and Object\\Class and Object.vcxproj|solutionrelative:Class and Object\\stack.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F139874-BA2C-441B-AF1F-750D6339D874}|Class and Object\\Class and Object.vcxproj|D:\\Github\\wzg_struy\\Class and Object\\Class and Object\\stack.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2F139874-BA2C-441B-AF1F-750D6339D874}|Class and Object\\Class and Object.vcxproj|solutionrelative:Class and Object\\stack.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 10,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "test.cpp",
+              "DocumentMoniker": "D:\\Github\\wzg_struy\\Class and Object\\Class and Object\\test.cpp",
+              "RelativeDocumentMoniker": "Class and Object\\test.cpp",
+              "ToolTip": "D:\\Github\\wzg_struy\\Class and Object\\Class and Object\\test.cpp",
+              "RelativeToolTip": "Class and Object\\test.cpp",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-15T07:00:42.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "stack.h",
+              "DocumentMoniker": "D:\\Github\\wzg_struy\\Class and Object\\Class and Object\\stack.h",
+              "RelativeDocumentMoniker": "Class and Object\\stack.h",
+              "ToolTip": "D:\\Github\\wzg_struy\\Class and Object\\Class and Object\\stack.h",
+              "RelativeToolTip": "Class and Object\\stack.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAIwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-13T07:20:57.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "stack.cpp",
+              "DocumentMoniker": "D:\\Github\\wzg_struy\\Class and Object\\Class and Object\\stack.cpp",
+              "RelativeDocumentMoniker": "Class and Object\\stack.cpp",
+              "ToolTip": "D:\\Github\\wzg_struy\\Class and Object\\Class and Object\\stack.cpp",
+              "RelativeToolTip": "Class and Object\\stack.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-13T07:20:48.842Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 12,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
