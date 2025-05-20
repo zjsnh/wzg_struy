@@ -1,0 +1,7 @@
+﻿  test.cpp
+D:\Github\wzg_struy\Class and Object\Class and Object\test.cpp(35,5): error C2660: “Date::print”: 函数不接受 1 个参数
+      D:\Github\wzg_struy\Class and Object\Class and Object\test.cpp(16,7):
+      参见“Date::print”的声明
+      D:\Github\wzg_struy\Class and Object\Class and Object\test.cpp(35,5):
+      尝试匹配参数列表“(Date *)”时
+  

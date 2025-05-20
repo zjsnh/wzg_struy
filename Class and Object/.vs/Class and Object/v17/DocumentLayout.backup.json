@@ -48,7 +48,7 @@
               "RelativeDocumentMoniker": "Class and Object\\test.cpp",
               "ToolTip": "D:\\Github\\wzg_struy\\Class and Object\\Class and Object\\test.cpp",
               "RelativeToolTip": "Class and Object\\test.cpp",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAmwCIAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-15T07:00:42.731Z",
               "EditorCaption": ""
@@ -61,9 +61,10 @@
               "RelativeDocumentMoniker": "Class and Object\\stack.h",
               "ToolTip": "D:\\Github\\wzg_struy\\Class and Object\\Class and Object\\stack.h",
               "RelativeToolTip": "Class and Object\\stack.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAIwBIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-13T07:20:57.467Z"
+              "WhenOpened": "2025-05-13T07:20:57.467Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -73,7 +74,7 @@
               "RelativeDocumentMoniker": "Class and Object\\stack.cpp",
               "ToolTip": "D:\\Github\\wzg_struy\\Class and Object\\Class and Object\\stack.cpp",
               "RelativeToolTip": "Class and Object\\stack.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-13T07:20:48.842Z",
               "EditorCaption": ""

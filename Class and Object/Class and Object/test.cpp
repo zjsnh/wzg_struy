@@ -15,7 +15,7 @@ public:
 
 	void print()
 	{
-		cout << _year << "-" << _month << "-" << _day << "-" << endl;
+		cout << _year << "-" << _month << "-" << _day << endl;
 	}
 
 private:
@@ -24,3 +24,14 @@ private:
 	int _day;
 };
 
+int main()
+{
+	Date d1;
+	d1.Init(2025, 5, 16);
+
+	Date d2;
+	d2.Init(2025, 5, 17);
+
+	d1.print();
+	d2.print();
+}
